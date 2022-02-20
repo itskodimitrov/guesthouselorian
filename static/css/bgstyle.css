@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+/* font-family: 'Orelega One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+/* font-family: 'Ubuntu Condensed', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+/* font-family: 'Philosopher', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rubik+Mono+One&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+/*
+font-family: 'Dela Gothic One', cursive;
+font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main_Con{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #141414;
+
+    box-shadow: 1px 1px 10px black;
+    z-index: 100;
+}
+
+.left_Content{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+.navImg{
+    width: 150px;
+    height: auto;
+}
+
+.right_Content{
+    margin: 10px;
+    display: flex;
+}
+
+.nav_A{
+    color: white;
+    text-decoration: none;
+}
+
+td{
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Philosopher', sans-serif;
+    border-right: 2px solid white;
+    vertical-align: middle;
+}
+
+td:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.349);
+    transition: .5s ease-in;
+}
+
+.start{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.none{
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.homeImage{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: auto;
+    z-index: -10;
+    margin-bottom: 70px;
+}
+
+.house_Con{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.house_Center{
+    display: flex;
+    align-items: center;
+
+}
+
+.house{
+    width: 500px;
+    height: auto;
+    margin: 50px;
+}
+
+.blur{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 500px;
+    height: auto;
+    z-index: -100;
+}
+
+.blur1{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 500px;
+    height: auto;
+    z-index: -100;
+    transform: scaleX(-1);
+}
+
+.u_Con{
+    display: flex;
+}
+
+.title{
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 50px;
+    z-index: 100;
+}
+
+.info{
+    min-width: 500px;
+    text-align: right;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+.info1{
+    min-width: 400px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.location_Btn{
+    display: block;
+    text-decoration: none;
+    z-index: 100;
+    margin-top: 20px;
+}
+
+.room{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: auto;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.title1{
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+}
+
+.title1:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: .7s ease;
+}
+
+.price_Con{
+    position: relative;
+}
+
+.price_Div{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+}
+
+.price{
+    background-image: linear-gradient(#2469EE,#5CF2E0);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px black;
+    border: 5px solid black;
+}
+
+.price_title{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.price_info{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.price_Data{
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px black;
+    font-size: 25px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin-bottom: 10px;
+}
+
+.price_Num{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small_Text{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px black;
+}
+
+.second_Title{
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Orelega One', cursive;
+    font-size: 50px;
+    z-index: 100;
+}
+
+.tri{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -9;
+    filter: opacity(75%);
+}
+
+.method{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 1 auto;
+    justify-content: center;
+    
+}
+
+.cash{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.bank{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.paypal{
+    width: 550px;
+    height: 150px;
+    margin: 20px;
+}
+
+.social_Con{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
+
+.social{
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    height: auto;
+}
+
+.social:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px rgb(105, 105, 105));
+    transition: .3s ease-in;
+}
+
+.zab_Con{
+    position: relative;
+    text-align: center;
+}
+
+.zab{
+    width: 700px;
+    height: auto;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.zab_Btn{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zab_Btn{
+    text-decoration: none;
+}
+
+.zab_Text{
+    color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 70px;
+}
+
+.zab_Text:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: .5s ease;
+}
+
+.contact_Con{
+    background-color: #141414;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 20px black
+}
+
+.title_White{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 50px;
+    z-index: 100;
+}
+
+.second_TitleWhite{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    z-index: 100;
+}
+
+.contact_SocialCon{
+    text-align: center;
+}
+
+.contact_Social{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(0, 195, 255);
+    border-radius: 20px;
+}
+
+.contact_Social:hover{
+    cursor: pointer;
+    background-color:rgb(0, 195, 255);
+    box-shadow: 0px 0px 40px rgb(0, 195, 255);
+    padding: 15px;
+    transition: .3s ease-in;
+}
+
+.u_Img{
+    width: 500px;
+    height: auto;
+}
+
+.u_ImgSP{
+    width: 500px;
+    height: 1247px;
+}
+
+.phone_Num{
+    display: none;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    z-index: 100;
+}
+
+@media(max-width: 1300px){
+
+    .phone_Num{
+        display: block;
+    }
+
+    .right_Content{
+        display: none;
+    }
+
+    .u_Con{
+        display: inline;
+        text-align: center;
+        align-items: center;
+    }
+
+    .u_Img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+        height: auto;
+    }
+
+    .u_ImgSP{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+        height: auto;
+    }
+
+    .left_Content{
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
+    .navImg{
+        display: none;
+    }
+
+    .house{
+        width: 800px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .homeImage{
+        top: 80px;
+    }
+
+    .house_Center{
+        display: block;
+    }
+
+    .blur{
+        display: none;
+    }
+     .blur1{
+        display: none;
+    }
+
+    .title{
+        font-size: 100px;
+    }
+
+    .info{
+        text-align: center;
+        font-size: 35px;
+        min-width: 500px;
+    }
+
+     .info1{
+        text-align: center;
+        font-size: 35px;
+        min-width: 500px;
+    }
+
+    .price_Div{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .paypal{
+        width: 500px;
+        height: 100px;
+    }
+
+    .team_ImagesCon{
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ici_Con{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .angel{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lora{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .room{
+        width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+}
